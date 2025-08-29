@@ -5,12 +5,22 @@ function App() {
 
 
   return (
-    <div className="w-[800px] min-h-[300px] mx-auto bg-sky-200 grid-cols-3 gap-4 p-4 grid">
-      <div className="w-full min-h-14 bg-red-200 col-span-3"> 1 </div>
-      <div className="w-full min-h-14 bg-red-200 col-span-2 row-span-3"> 2 </div>
-      <div className="w-full min-h-14 bg-red-200 "> 3 </div>
-      <div className="w-full min-h-14 bg-red-200 "> 4 </div>
-      <div className="w-full min-h-14 bg-red-200 col-span-3"> 5 </div>
+    <div className="flex items-center justify-center">
+      <div className="w-56 bg-sky-200 text-white rounded-md p-4 ">
+        smartphone(640px)
+      </div>
+
+      <div className="w-56 bg-sky-200 text-white rounded-md p-4 hidden md:block">
+        tablet(768px)
+      </div>
+
+      <div className="w-56 bg-sky-200 text-white rounded-md p-4 hidden lg:block">
+        laptop(1024px)
+      </div>
+
+      <div className="w-56 bg-sky-200 text-white rounded-md p-4 hidden xl:block">
+        desktop(1280px)
+      </div>
     </div>
   );
 }
