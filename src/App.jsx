@@ -19,6 +19,11 @@ function App() {
       </div>
 
 
+
+      <div className="group relative p-4 w-3xs">
+
+        <span className="absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0 bg-amber-50 transition-transform duration-300 ease-out group-hover:scale-x-100 group-focus-within:scale-x-100"></span>
+      </div>
     </div>
   );
 }
